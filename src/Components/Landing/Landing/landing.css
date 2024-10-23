@@ -1,0 +1,304 @@
+.landing-background {
+    background-image: url('../../Assets/Capture.JPG');
+    padding: 2rem;
+    height: 100%;
+    background-color: #121618;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.landing-text {
+    color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ItemMenuBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.menu-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.drink-heading {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    font-size: 50px;
+
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.line::before,
+.line::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+
+/* ------------------Drinks------------------------ */
+.drinksItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.drinksItems div {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.drinksItems div:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+/* -----------------item button--------------- */
+
+.ItemsButton {
+    margin: 50px 0 50px 0;
+}
+
+.SubButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-btn:hover {
+    border: 3px solid #0056b3;
+
+}
+
+
+
+/* -----------------------menu items------------------------ */
+
+
+
+.ItemMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.menu-item {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(40% - 1rem);
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #F5F5F5;
+    text-align: left;
+}
+
+.description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.price {
+    float: right;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* info box */
+
+.infoBox {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #C5A059;
+}
+
+.infoBox p {
+    margin: 10px 0;
+}
+
+.infoBox hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+
+
+/* botum nav */
+.bottumnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1 px solid white;
+    margin-top: 5px;
+
+
+}
+
+.bottumnav>div {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.bottum-logo {
+    width: 350px;
+}
+
+.bottumContact,
+.bottumLogo,
+.bottumAddress {
+    border: 1px solid white;
+    height: 150px;
+    border-radius: 8px;
+
+}
+
+.bottumContact img,
+.bottumLogo img,
+.bottumAddress img {
+    margin-right: 10px;
+}
+
+
+/* Terms&Conditions */
+
+.TermsConditions {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px 0 20px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px;
+
+}
+
+.PrivacyPolicy {
+    display: flex;
+    margin: 0 5px 0 5px;
+}
+
+.PrivacyPolicy p {
+    padding: 0 10px 0 10px;
+
+}
+
+@media (max-width: 768px) {
+
+    .bottumnav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .bottumnav>div {
+        flex: unset;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottum-logo {
+        width: 150px;
+    }
+
+    .bottumContact,
+    .bottumLogo,
+    .bottumAddress {
+        height: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .bottumContact img,
+    .bottumAddress img {
+        margin-right: 5px;
+        width: 20px;
+    }
+
+    .TermsConditions {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .PrivacyPolicy {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .PrivacyPolicy p {
+        padding: 0 5px;
+        font-size: 12px;
+    }
+}
