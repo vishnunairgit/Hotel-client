@@ -1,14 +1,11 @@
 .landing-background {
-    background-image: url('../../Assets/Capture.JPG');
+    background-image: url('../../Assets//f81b6208cb3da0f5ecc0f0d109ca4bd0.jpg');
+
     padding: 2rem;
     height: 100%;
     background-color: #121618;
-    background-repeat: no-repeat;
-
+    background-repeat: repeat;
 }
-
-
-
 
 .landing-text {
     color: #fff;
@@ -25,8 +22,6 @@
     padding: 20px;
     margin: 20px;
 }
-
-
 
 
 
@@ -73,7 +68,7 @@
 }
 
 
-/* ------------------Drinks------------------------ */
+/* Drinks */
 .drinksItems {
     display: flex;
     flex-wrap: wrap;
@@ -93,15 +88,7 @@
     background-color: #e0e0e0;
 }
 
-
-
-
-
-
-
-
-
-/* -----------------item button--------------- */
+/* item button */
 
 .ItemsButton {
     margin: 50px 0 50px 0;
@@ -128,10 +115,7 @@
 }
 
 
-
-/* -----------------------menu items------------------------ */
-
-
+/* menu items */
 
 .ItemMenu {
     display: flex;
@@ -167,39 +151,46 @@
     }
 }
 
-/* info box */
-
-.infoBox {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px;
-    background-color: #C5A059;
-}
-
-.infoBox p {
-    margin: 10px 0;
-}
-
-.infoBox hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 10px 0;
-}
-
-
 
 /* botum nav */
 .bottumnav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
-    border: 1 px solid white;
     margin-top: 5px;
+}
 
+.footer-logo-img {
+    width: 80px;
+    height: auto;
+    position: relative;
+    top: -25%;
+}
+.footer-text {
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.footer-text-deep {
+    color: blue;
+}
+
+.footer-text-net {
+    color: white;
+}
+
+.footer-text-soft {
+    color: #857878;
+}
+
+.footer-icons img {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
 }
 
 .bottumnav>div {
@@ -209,7 +200,7 @@
 }
 
 .bottum-logo {
-    width: 350px;
+    width: 120px;
 }
 
 .bottumContact,
@@ -221,6 +212,27 @@
 
 }
 
+.bottumContact h4 {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottum-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .bottumContact img,
 .bottumLogo img,
 .bottumAddress img {
@@ -228,8 +240,8 @@
 }
 
 
-/* Terms&Conditions */
 
+/* Terms&Conditions */
 .TermsConditions {
     display: flex;
     justify-content: space-between;
@@ -238,7 +250,6 @@
     font-size: 14px;
     font-weight: 400;
     margin: 20px;
-
 }
 
 .PrivacyPolicy {

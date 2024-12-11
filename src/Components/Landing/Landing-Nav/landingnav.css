@@ -5,30 +5,71 @@
   padding: 0 20px;
   height: 100px;
   background-color: #121618;
-
+  box-sizing: border-box;
 }
 
-/* Style the logo */
+/* Style for the logo and text */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  text-align: center;
+}
+
 .navbar-logo .logo-img {
-  width: 40px;
-  height: 40px;
-
+  max-width: 100%;
+  height: 80px;
+  width: 110px;
 }
 
-/* Align navigation links to the right */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.text-line {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.deep-net {
+  color: blue;
+  /* Deep in blue */
+  font-weight: bold;
+}
+
+.net {
+  color: white;
+  font-weight: normal;
+}
+
+.soft {
+  color: #857878;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
 .navbar-links {
   margin-left: auto;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
-/* Add blue underline to links */
-.navbar-links .nav-link {
+.navbar-links .nav-item {
   margin-right: 15px;
+}
+
+.navbar-links .nav-link {
   font-size: 16px;
-  color: white;  /* Keep the text white */
+  color: white;
   position: relative;
   text-decoration: none;
-  padding-top: 60px;
-
+  padding-top: 20px;
 }
 
 .navbar-links .nav-link::after {
@@ -38,11 +79,10 @@
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: blue;  /* Blue underline */
+  background-color: blue;
   transition: width 0.3s ease-in-out;
 }
 
-/* On hover, show the blue underline */
 .navbar-links .nav-link:hover::after {
   width: 100%;
 }
@@ -51,4 +91,19 @@
   margin-right: 0;
 }
 
-  
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-text {
+  padding-left: 20px;
+}

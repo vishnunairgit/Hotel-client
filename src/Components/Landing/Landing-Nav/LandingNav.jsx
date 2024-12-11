@@ -1,48 +1,66 @@
-
 import React from 'react';
 import './landingnav.css';
-import Logo from '../../Assets/logo---12 (1).png';
-import { Navbar, Nav } from 'react-bootstrap';
+import Logo from '../../Assets/logooo.png'
 import { useNavigate } from 'react-router-dom';
 
-
 function LandingNav() {
-
-
   const navigate = useNavigate();
 
   const handleMenu = () => {
-    navigate('/Addmenu')
-  }
-
-
-
-
-
+    navigate('/Addmenu');
+  };
+  const handleLanding = () => {
+    navigate('/');
+  };
 
   return (
+    <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
+      <div className="container-fluid">
+        <div onClick={handleLanding} className="navbar-logo">
+          <img src={Logo} alt="Logo" className="logo-img" />
+          <div className="text-container">
+            <div className="text-line">
+              <span className="deep-net">DEEP</span> <span className="net">NET</span>
+            </div>
+            <div className="soft">SOFT</div>
+          </div>
+        </div>
 
-    <Navbar  expand="lg" className="navbar-dark custom-navbar">
-      <Navbar.Brand href="#" className="navbar-logo">
-        <img src={Logo} alt="Logo" className="logo-img" />
-      </Navbar.Brand>
 
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="navbar-links">
-          <Nav.Link href="#home" className="text-white">HOME</Nav.Link>
-          <Nav.Link onClick={handleMenu} className="text-white">MENU</Nav.Link>
-          <Nav.Link href="#order" className="text-white">MAKE AN ORDER</Nav.Link>
-          <Nav.Link href="#contact" className="text-white">CONTACT US</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-links">
+            <li className="nav-item">
+              <a className="nav-link" >HOME</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" onClick={handleMenu}>ADD MENU</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" >MAKE AN ORDER</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" >CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
 export default LandingNav;
-
-
 
 
