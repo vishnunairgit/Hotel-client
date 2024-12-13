@@ -18,7 +18,7 @@ import { getAllmenu } from '../../../Api/Menu';
 function Landing() {
     const [allmenu, setAllmenu] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [ setError] = useState(null);
 
     useEffect(() => {
         const fetchMenu = async () => {
