@@ -1,18 +1,37 @@
 .landing-background {
-    background-image: url('../../Assets//f81b6208cb3da0f5ecc0f0d109ca4bd0.jpg');
-
+    background-image: url('../../Assets/f81b6208cb3da0f5ecc0f0d109ca4bd0.jpg');
+    background-color: #121618;
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    position: relative; /* Allows positioning of the overlay */
     padding: 2rem;
     height: 100%;
-    background-color: #121618;
-    background-repeat: repeat;
+}
+.landing-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Ensures the overlay is on top of the background */
 }
 
 .landing-text {
+    position: relative; /* Ensures text is above the overlay */
     color: #fff;
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
+    z-index: 2; /* Makes sure the text is above the overlay */
 }
+.landing-text h1, 
+.landing-text p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to the text */
+}
+
 
 .ItemMenuBorder {
     display: flex;
@@ -21,6 +40,9 @@
     border: 1px solid #ccc;
     padding: 20px;
     margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adds subtle background */
+    backdrop-filter: blur(5px); /* Adds blur effect for a glassy look */
+    border-radius: 10px; /* Adds rounded corners */
 }
 
 
